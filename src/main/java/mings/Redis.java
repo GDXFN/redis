@@ -46,7 +46,7 @@ public class Redis {
         jedis.del(articleTitle);
      }
      static  void uddateAuthor(Article article,String articleTitle,Jedis jedis){
-        article.setAuthor("fs");
+        article.setAuthor("fn");
         String article1=JSON.toJSONString(article);
         jedis.set(articleTitle,article1);
      }
